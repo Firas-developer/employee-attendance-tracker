@@ -5,7 +5,7 @@ export default function WorkForm() {
     function handleSubmit(e) {
         e.preventDefault()
         const report = e.target.report.value
-        axios.post("http://localhost:5000/sendmail", { report: report })
+        axios.post("https://employee-attendance-tracker-server.vercel.app/sendmail", { report: report })
         setSucess(!success)
         
     }
