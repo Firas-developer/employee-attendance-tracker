@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 export default function Employee() {
     var [empList, setEmpList] = useState([])
     useEffect(() => {
-        axios.get("http://localhost:5000/employeeList").then((data) => {
+        axios.get("https://employee-attendance-tracker-server.vercel.app/employeeList").then((data) => {
             setEmpList(data.data)
         })
     }, [])
@@ -23,7 +23,7 @@ export default function Employee() {
     //function to show Alert
     function Alert(eid){
         setShowAlert(!showAlert)
-        axios.post("http://localhost:5000/deleteEmployee",{eid:eid})
+        axios.post("https://employee-attendance-tracker-server.vercel.app/deleteEmployee",{eid:eid})
     }
 
     //Function to create employee
@@ -60,7 +60,7 @@ export default function Employee() {
                 progress: undefined,
                 theme: "light",
             });
-            axios.post("http://localhost:5000/addEmployee", { name: name, eid: eid, position: position, email: email })
+            axios.post("https://employee-attendance-tracker-server.vercel.app/addEmployee", { name: name, eid: eid, position: position, email: email })
             setEmpList([...empList, { name: name, eid: eid, position: position, email: email }])
 
         }).catch(err => {
