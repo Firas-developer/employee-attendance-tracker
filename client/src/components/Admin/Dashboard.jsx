@@ -3,7 +3,7 @@ import axios from 'axios'
 export default function Dashboard() {
     var [employeeCount, setEmployeeCount] = useState()
     useState(() => {
-        axios.get("http://localhost:5000/employeeList").then((data) => {
+        axios.get("https://employee-attendance-tracker-server.vercel.app/employeeList").then((data) => {
             setEmployeeCount(data.data.length);
         })
     }, [])
