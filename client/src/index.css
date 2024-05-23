@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  font-family: "Lora", serif;
+}
+.active{
+  background-color: rgb(55 65 81);
+  padding: 0.25rem;
+}
+th, td {
+  border: 1px solid black;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 410px) {
+  th, td {
+    font-size: 10px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 1px;
+  }
+}
