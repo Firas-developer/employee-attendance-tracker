@@ -1,5 +1,5 @@
-Employee Attendance Tracker
-Project Overview
+# Employee Attendance Tracker
+# Project Overview
 The Employee Attendance Tracker is a comprehensive web application designed to streamline attendance management and work progress tracking for employees. It includes authentication using Firebase, frontend development with React, backend services using Node.js and Express.js with MongoDB, and integrates email notifications for daily reports to managers. An admin panel allows for centralized record management and reporting.
 
 Technical Requirements
@@ -43,8 +43,8 @@ Implementation:
 HTTPS for secure communication.
 Data encryption and secure storage practices.
 
-Employee Attendance Tracker Documentation
-Installation Guide
+# Employee Attendance Tracker Documentation
+# Installation Guide
 Prerequisites
 Before installing the Employee Attendance Tracker, ensure you have the following prerequisites installed:
 
@@ -63,6 +63,7 @@ Navigate to the backend and frontend directories separately and install dependen
 
 bash
 Copy code
+
 # Install backend dependencies
 cd backend
 npm install
