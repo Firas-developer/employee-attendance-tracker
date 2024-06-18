@@ -43,6 +43,10 @@ Implementation:
 HTTPS for secure communication.
 Data encryption and secure storage practices.
 
+# Admin User Details
+id: admin@gmail.com
+password: admin123
+
 # Employee Attendance Tracker Documentation
 # Installation Guide
 Prerequisites
